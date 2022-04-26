@@ -13,3 +13,5 @@ removed unnecessary this calls from constructors
 added variables to index.js
 
 initial question prompt added to index.js
+
+added extends to classes to make child of employee class

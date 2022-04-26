@@ -1,9 +1,11 @@
 // variables
 const inquirer = require('inquirer');
-// const fs = rquire('fs');
-const Engineer = require('./lib/engineer');
-const Intern = require('./lib/intern');
+// const fs = require('fs');
+// const Employee = require('./lib/employee')
+// const Engineer = require('./lib/engineer');
+// const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
+
  
 // initial prompt
 
@@ -63,11 +65,38 @@ const initPrompt = () => {
         },
     ]).then(answers => {
         console.log(answers);
-        const manager = new Manager(answers.name, answers.ID, answers.email, answers.officeNumber);
+        const manager = new Manager(answers.name, answers.ID, answers.email, answers.office);
         teamMembers.push(manager);
         promptMenu();
     })
 };
+
+// manager options menu
+
+
+const promptMenu = () => {
+    return inquirer.prompt([
+        {
+            type: 'list',
+            name: 'menu',
+            message: 'What would you like to do?',
+            choices: ['Add Engineer', 'Add Intern', 'Finish Team Building']
+        }])
+        .then(userChoice => {
+            switch (userChoice.menu) {
+                case "add an engineer":
+                    promptEngineer();
+                    break;
+                case "add an intern":
+                    promptIntern();
+                    break;
+                default:
+                    buildTeam();
+            }
+        });
+};
+
+
 
 
 

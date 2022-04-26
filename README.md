@@ -11,3 +11,5 @@ added individualaized params for each class
 removed unnecessary this calls from constructors
 
 added variables to index.js
+
+initial question prompt added to index.js

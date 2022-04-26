@@ -9,3 +9,5 @@ constructors added for employee, engineer, inter, manager
 added individualaized params for each class
 
 removed unnecessary this calls from constructors
+
+added variables to index.js

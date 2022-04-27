@@ -17,3 +17,5 @@ initial question prompt added to index.js
 added extends to classes to make child of employee class
 
 manager prompt menu added
+
+employee test added

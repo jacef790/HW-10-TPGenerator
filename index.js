@@ -1,12 +1,14 @@
 // variables
 const inquirer = require('inquirer');
-// const fs = require('fs');
-// const Employee = require('./lib/employee')
-// const Engineer = require('./lib/engineer');
-// const Intern = require('./lib/intern');
+const fs = require('fs');
+const Employee = require('./lib/employee')
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
-
- 
+const path = require('path');
+const OUTPUT_DIR = path.resolve(__dirname, "output")
+const outputPath = path.join(OUTPUT_DIR, "team.html");
+const teamMembers = [];
 // initial prompt
 
 const initPrompt = () => {
@@ -71,8 +73,8 @@ const initPrompt = () => {
     })
 };
 
-// manager options menu
 
+// manager options menu
 
 const promptMenu = () => {
     return inquirer.prompt([
@@ -95,9 +97,6 @@ const promptMenu = () => {
             }
         });
 };
-
-
-
 
 
 initPrompt();

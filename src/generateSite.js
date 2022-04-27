@@ -1,4 +1,4 @@
-const generateTeam = (team) => {
+const buildTeam = (team) => {
     console.log(team);
     // Empty array to push html elements to and loop through the team
     const html = [];
@@ -87,7 +87,7 @@ module.exports = team => {
       </head>
       <body>
         <h1>MY TEAM</h1>
-        <main> ${generateTeam(team)} </main>
+        <main> ${buildTeam(team)} </main>
     
         <!-- Optional JavaScript; choose one of the two! -->
     

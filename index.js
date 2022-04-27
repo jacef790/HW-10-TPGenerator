@@ -9,6 +9,7 @@ const path = require('path');
 const OUTPUT_DIR = path.resolve(__dirname, "dist")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const teamMembers = [];
+const generateSite = require('./src/generateSite')
 
 
 // initial prompt
@@ -58,8 +59,8 @@ const initPrompt = () => {
             type: 'input',
             name: 'officeNumber',
             message: 'Enter your office number (Required)',
-            validate: officeNumber => {
-                if (officeNumber) {
+            validate: office => {
+                if (office) {
                     return true;
                 } else {
                     console.log('Enter your office number!');
@@ -84,20 +85,22 @@ const promptMenu = () => {
             type: 'list',
             name: 'menu',
             message: 'What would you like to do?',
-            choices: ['Add Engineer', 'Add Intern', 'Finish Team Building']
+            choices: ['Add Engineer', 'Add Intern', 'Build Team']
         }])
         .then(userChoice => {
             switch (userChoice.menu) {
-                case "add an engineer":
+                case "Add Engineer":
                     promptEngineer();
                     break;
-                case "add an intern":
+                case "Add Intern":
                     promptIntern();
                     break;
-                default:
+                case "Build Team":
                     buildTeam();
-            }
-        });
+                 default:
+                    promptMenu();
+         }
+     });
 };
 
 

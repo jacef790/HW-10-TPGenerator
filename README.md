@@ -14,8 +14,11 @@ Technologies Used: HTML, CSS, JavaScript, Node.js, inquirer, Jest
 
 link to repository: https://github.com/jacef790/HW-10-TPGenerator
 
+link to video:
+
 GIF of working files: 
 
+![Team Profile Builder](./TeamProfileBuilder.gif)
 
 
 

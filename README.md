@@ -49,3 +49,5 @@ engineer and intern prompt added
 generateSite.js, bootstrap and fontawesome script added
 
 Build team function working and generating html
+
+Fix office number and github user name returning undefined in HTML

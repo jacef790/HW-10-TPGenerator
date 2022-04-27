@@ -57,7 +57,7 @@ const initPrompt = () => {
         },
         {
             type: 'input',
-            name: 'officeNumber',
+            name: 'office',
             message: 'Enter your office number (Required)',
             validate: office => {
                 if (office) {

@@ -19,3 +19,5 @@ added extends to classes to make child of employee class
 manager prompt menu added
 
 employee test added
+
+engineer, intern and manager tests added, all pass

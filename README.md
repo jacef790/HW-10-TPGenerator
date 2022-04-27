@@ -1,5 +1,8 @@
 # HW-10-TPGenerator
 
+
+
+
 folders and files created
 
 more files and folders created
@@ -25,3 +28,5 @@ engineer, intern and manager tests added, all pass
 css file added
 
 engineer and intern prompt added
+
+generateSite.js, bootstrap and fontawesome script added

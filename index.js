@@ -6,7 +6,7 @@ const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
 const path = require('path');
-const OUTPUT_DIR = path.resolve(__dirname, "output")
+const OUTPUT_DIR = path.resolve(__dirname, "dist")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const teamMembers = [];
 
@@ -233,6 +233,7 @@ const promptIntern = () => {
 };
 
 
+// Team Builder function to output to HTML file
 
 const buildTeam = () => {
     console.log('-----Team Built-----');

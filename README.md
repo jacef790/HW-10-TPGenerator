@@ -16,7 +16,7 @@ link to repository: https://github.com/jacef790/HW-10-TPGenerator
 
 link to video:
 
-GIF of working files: 
+GIF of working files: https://drive.google.com/file/d/1RlRFiEAd08VUMmINsWuwUsHPZj-q8oyn/view?usp=sharing
 
 ![Team Profile Builder](./TeamProfileBuilder.gif)
 
